@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>第二站</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<style>
+		.container {
+			display: flex;
+			height: 100vh;
+		}
+
+		.image, .text {
+			flex: 1;
+		}
+
+		.image {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.photo {
+			position: relative;
+			width: 100%;
+			max-width: 600px;
+			height: 400px;
+		}
+		.text h2{
+			padding: 20px;
+			position: relative;
+			overflow: hidden;
+			font-family: 楷体;
+			color: #e60000;
+			font-size: 50px;
+		}
+		.text h1{
+		    padding: 20px;
+		    position: relative;
+		    overflow: hidden;
+		    display: flex;
+			font-family: 楷体;
+			font-size: 25px;
+		    justify-content: center; /* 水平居中 */
+		    text-align: center; /* 水平居中 */
+		}
+		.tain {
+		      width: 75%;
+		      height: 100%;
+			  background-color: #daecee;
+			  opacity: 0.9;
+			  margin: 0 auto;
+			  display: flex;
+		      justify-content: center;
+		      align-items: center;
+			  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+		    }
+		.home-link {
+		  width: 50px;
+		  height: 50px;
+		  position: absolute;
+		  top: 10px;
+		  left: 95%;
+		  font-size: 24px;
+		  color: #000;
+		  text-decoration: none;
+		  z-index: 9999;
+		}
+		.menu-icon {
+		  position: absolute;
+		  top: 10px;
+		  right: 10px;
+		  font-size: 24px;
+		  color: #000;
+		  text-decoration: none;
+		  z-index: 9999;
+		}
+		
+		.menu {
+		  width: 25%;
+		  height: 100vh;
+		  background-color: #ffffff;
+		  position: fixed;
+		  top: 0;
+		  left: -100%;
+		  transition: left 0.3s;
+		  z-index: 999;
+		  opacity: 0.9;
+		}
+		/* 目录样式 */
+		/* 导航菜单容器的样式 */
+		.menu {
+		  background-color: #aa9989;
+		}
+		
+		/* 导航菜单项的样式 */
+		.menu ul {
+		  list-style-type: none;
+		  padding: 50px;
+		  margin: 15px;
+		}
+		
+		/* 导航菜单项的样式 */
+		.menu li {
+		  display: inline-block;
+		  margin: 10px 0;
+		}
+		
+		.menu li a {
+		  text-decoration: none;
+		  color: #000004;
+		  padding: 5px 10px;
+		  border-radius: 5px;
+		  font-size: 25px;
+		  font-family: 华文隶书;
+		  padding-top: 15px;
+		}
+		
+		.menu li a:hover {
+		  background-color: #ccc;
+		}
+		 .menu-icon:focus + .menu {
+		      display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="image">
+			<img class="photo" src="wa/dd.jpg">
+		</div>
+		<div class="text">
+			<h2>第二站</h2>
+			<h1>平湖秋月</h1>
+			<p>
+				平湖秋月，西湖十景之一。南宋时，被列为西湖十景之三，元代又称之为“西湖夜月”而列入钱塘十景。</p>
+			<p>“平湖秋月”景观是指：每当清秋气爽，西湖湖面平静如镜，皎洁的秋月当空，月光与湖水交相辉映，颇有“一色湖光万顷秋”之感，故题名“平湖秋月”。
+			</p>
+		</div>
+	</div>
+	<div class="tain">
+		<a href="https://lwenxue.github.io/west_zhiyin/zhiyin.html" class="home-link"><i class="fas fa-home"></i></a>
+		<a href="#" class="menu-icon"><i class="fas fa-bars"></i></a>
+		<div class="menu">
+		<ul>
+		  <li><a href="https://lwenxue.github.io/west_nav/nav.html">1、断桥残雪</a></li></br>
+		  <li><a href="https://lwenxue.github.io/west_navc/navc.html">2、平湖秋月</a></li></br>
+		  <li><a href="https://lwenxue.github.io/west_nav2/nav2.html">3、苏堤春晓</a></li></br>
+		  <li><a href="https://lwenxue.github.io/west_nav3/nav3.html">4、曲院风荷</a></li></br>
+		  <li><a href="https://lwenxue.github.io/west_nav4/nav4.html">5、双峰插云</a></li></br>
+		  <li><a href="https://lwenxue.github.io/west_nav5/nav5.html">6、花港观鱼</a></li></br>
+		  <li><a href="https://lwenxue.github.io/west_nav6/nav6.html">7、三潭印月</a></li></br>
+		  <li><a href="https://lwenxue.github.io/west_nav7/nav7.html">8、南屏晚钟</a></li></br>
+		  <li><a href="https://lwenxue.github.io/west_nav8/nav8.html">9、雷峰夕照</a></li></br>
+		  <li><a href="https://lwenxue.github.io/west_nav9/nav9.html">10、柳浪闻莺</a></li></br>
+		</ul>
+		</div>
+</body>
+
+<script>
+	  document.addEventListener("DOMContentLoaded", function () {
+	    showNextImage();
+	  });
+	
+	  // 获取菜单图标和菜单的引用
+	  var menuIcon = document.querySelector(".menu-icon");
+	  var menu = document.querySelector(".menu");
+	
+	  // 点击事件处理程序
+	  menuIcon.addEventListener("click", function() {
+	    // 切换菜单栏的显示状态
+	    if (menu.style.left === "-100%") {
+	      menu.style.left = "0";
+	    } else {
+	      menu.style.left = "-100%";
+	    }
+	  });
+	</script>
+</html>
