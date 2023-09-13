@@ -57,11 +57,11 @@
 			  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 		    }
 		.home-link {
-		  width: 50px;
-		  height: 50px;
+		  width: 45px;
+		  height: 45px;
 		  position: absolute;
-		  top: 10px;
-		  left: 95%;
+		  top: 8px;
+		  left: 4%;
 		  font-size: 24px;
 		  color: #000;
 		  text-decoration: none;
@@ -70,12 +70,13 @@
 		.menu-icon {
 		  position: absolute;
 		  top: 10px;
-		  right: 10px;
+		  left: 15px;
 		  font-size: 24px;
 		  color: #000;
 		  text-decoration: none;
 		  z-index: 9999;
 		}
+		
 		
 		.menu {
 		  width: 25%;
@@ -123,6 +124,25 @@
 		 .menu-icon:focus + .menu {
 		      display: block;
 		}
+		.next{
+		  position: fixed;
+		  bottom: 20%;
+		  left: 80%;
+		}
+		
+		/* 定义按钮 hover 状态的样式 */
+		.button:hover {
+		  background-color: #fefffe;
+		}
+		.button{
+			font-size: 25px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.button i {
+		      font-size: 35px; /* 这里设置图标的大小 */
+		    }
 	</style>
 </head>
 <body>
@@ -155,6 +175,15 @@
 		  <li><a href="https://lwenxue.github.io/west_nav8/nav8.html">9、雷峰夕照</a></li></br>
 		  <li><a href="https://lwenxue.github.io/west_nav9/nav9.html">10、柳浪闻莺</a></li></br>
 		</ul>
+		</div>
+		<div class="next">
+			<a href="https://lwenxue.github.io/west_nav2/nav2.html" class="next">
+				<!-- 下一页按钮 -->
+				<button class="button" onclick="goToNextPage()">
+									下一站
+					<i class="arrow fas fa-chevron-right"></i>
+				</button>
+			</a>
 		</div>
 </body>
 
